@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import { toggleTimer } from "./actions";
+import { toggleTimer, deleteTimer } from "./actions";
 
 class TimerView extends Component {
   render() {
-    const { index, toggleTimer, timer } = this.props;
+    const { index, toggleTimer, timer, deleteTimer } = this.props;
     return (
       <div>
         <h2>{timer.name}</h2>
@@ -13,12 +13,13 @@ class TimerView extends Component {
         <button onClick={(e) => toggleTimer(index)}>
           {timer.isRunning ? "Stop" : "Start"}
         </button>
+        <button onClick={(e) => deleteTimer(index)}>Delete</button>
       </div>
     );
   }
 }
 
 const mapStateToProps = (state) => ({});
-const mapDispatchToProps = () => ({ toggleTimer });
+const mapDispatchToProps = () => ({ toggleTimer, deleteTimer });
 
 export default connect(mapStateToProps, mapDispatchToProps())(TimerView);
