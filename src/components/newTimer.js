@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import { addTimer, NEW_TIMER } from "../actions";
+import { addTimer } from "../actions/index";
 
 class NewTimer extends Component {
   constructor(props) {
@@ -27,8 +27,8 @@ class NewTimer extends Component {
   }
 }
 
-const mapStateToProps = (state) => {};
+const mapStateToProps = (state) => ({});
 
-const mapDispatchToProps = () => addTimer;
+const mapDispatchToProps = () => ({ addTimer });
 
 export default connect(mapStateToProps, mapDispatchToProps())(NewTimer);
