@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 
 import { addTimer } from "../actions/index";
 
+import "./newTimer.css";
+
 class NewTimer extends Component {
   constructor(props) {
     super(props);
@@ -10,18 +12,24 @@ class NewTimer extends Component {
   }
 
   handleChange = (e) => this.setState({ name: e.target.value });
-  handleClick = (e) => this.props.addTimer(this.state.name);
+  handleClick = () => {
+    this.props.addTimer(this.state.name);
+    this.setState({ name: "" });
+  };
 
   render() {
     return (
-      <div>
+      <div className="new-timer">
         <input
+          className="new-timer-input"
           type="text"
           placeholder="New Timer Name"
           value={this.state.name}
           onChange={this.handleChange}
         />
-        <button onClick={this.handleClick}>Save</button>
+        <button className="new-timer-button" onClick={this.handleClick}>
+          Save
+        </button>
       </div>
     );
   }

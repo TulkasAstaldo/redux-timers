@@ -1,0 +1,28 @@
+.new-timer {
+  margin: 1em;
+}
+
+.new-timer-input {
+  padding: 0.5em;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid;
+  border-radius: 0.4em 0 0 0.4em;
+}
+
+.new-timer-button {
+  border: 1px solid #000;
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 0 0.4em 0.4em 0;
+  color: white;
+  background-color: #000;
+}
+
+.new-timer-button:hover {
+  border-color: white;
+}
+
+.new-timer-button:active {
+  background-color: rgb(3, 3, 70);
+}
