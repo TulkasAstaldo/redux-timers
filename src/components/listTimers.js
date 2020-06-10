@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { selectTimer } from "../actions";
-import TimerView from "../timerView";
+import TimerView from "./timerView";
 
 class ListTimers extends Component {
   render() {

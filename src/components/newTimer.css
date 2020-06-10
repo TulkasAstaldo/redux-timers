@@ -1,5 +1,5 @@
 .new-timer {
-  margin: 1em;
+  margin: 0.5em;
 }
 
 .new-timer-input {
@@ -25,4 +25,8 @@
 
 .new-timer-button:active {
   background-color: rgb(3, 3, 70);
+}
+
+.new-timer-button::-moz-focus-inner {
+  border: 0;
 }

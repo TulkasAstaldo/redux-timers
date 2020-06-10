@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          Learn React
+          <h1>Timerz</h1>
           <NewTimer />
           <ListTimers />
         </header>

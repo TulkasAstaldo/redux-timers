@@ -1,0 +1,22 @@
+.timer-view-button {
+  border: 1px solid #000;
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 0.4em 0.4em 0.4em 0.4em;
+  color: white;
+  background-color: #000;
+  outline: none;
+}
+
+/* mozzila button outline removed */
+.timer-view-button::-moz-focus-inner {
+  border: 0;
+}
+
+.timer-view-button:hover {
+  border-color: white;
+}
+
+.timer-view-button:active {
+  background-color: rgb(31, 31, 32);
+}

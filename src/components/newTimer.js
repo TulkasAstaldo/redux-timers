@@ -35,8 +35,6 @@ class NewTimer extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({});
-
 const mapDispatchToProps = () => ({ addTimer });
 
-export default connect(mapStateToProps, mapDispatchToProps())(NewTimer);
+export default connect(null, mapDispatchToProps())(NewTimer);
